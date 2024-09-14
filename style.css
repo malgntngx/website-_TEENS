@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    font-family: 'Nerko One', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    max-height: 15%;
+}
+
+.navbar a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar a img:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    flex: 1; /* Menggunakan flex untuk memperluas area */
+    justify-content: center; /* Memusatkan teks navbar secara horizontal */
+    align-items: center;
+}
+
+.navbar .navbar-nav a {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.navbar .navbar-nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    align-items: center;
+    margin-top: 200px; /* Hindari overlap dengan navbar */
+    margin-top: 10rem;
+}
+
+.home .content {
+    max-width: 40rem;
+    padding: 1.4rem 7%;
+}
+
+.home .content h1 {
+    font-size: 2rem;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+}
+
+.home .content button {
+    font-size: 1.4rem;
+    margin-top: 10.rem;
+    border-radius: 9px;
+    background-color: rgb(20, 161, 74);
+    color: white;
+    padding: 0.4rem;
+    box-shadow: 2px 2px;
+    font-family: 'Baskervville SC', serif;
+}
+
+.home .content button:hover {
+    background-color: aliceblue;
+    color: green;
+}
+
+/* Image Container */
+.home .img-conten img {
+    width: 230px;
+    height: 200px;
+    padding: 1rem;
+}
+
+/* style untuk about */
+.about {
+    padding: 13rem 7%;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+}
+
+
+
+.about .content {
+    margin: 1rem;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.about .content img {
+    width: 250px;
+    height: 150px;
+    margin-right: 1.5rem;
+    box-shadow: 0 0 20px gray;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.about .content p {
+    font-size: 1.2rem;
+}
+
+/* visi misi section */
+
+.visiMisi {
+    margin-top: 6rem;
+    padding: 7rem 7%;
+    text-align: center;
+}
+
+.visiMisi h1 {
+    font-size: 2.5rem;
+}
+
+.visiMisi .content-visiMisi {
+    display: flex;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.visiMisi .content-visiMisi .visi-content {
+    width: 50%;
+}
+
+.visiMisi .content-visiMisi .misi-content {
+    width: 50%;
+}
+
+.visiMisi .content-visiMisi .visi-list {
+    padding: 1.2rem;
+    background-color: green;
+    margin: 1.3rem;
+    height: 37vh;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 0 15px gray;
+}
+
+.visiMisi .content-visiMisi .visi-list p {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.visiMisi .pembatas {
+    border: 1px solid black;
+}
+
+.visiMisi .content-visiMisi .misi-content .misi-list {
+    padding: 1.4rem;
+}
+
+.visiMisi .content-visiMisi .misi-content .misi-list ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+/* style untuk benefeit */
+.benefit {
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 7%;
+    text-align: center;
+}
+
+.benefit h1 {
+    font-size: 2.5rem;
+}
+
+.benefit .content-benefit {
+    margin-top: 1rem;
+    max-width: 50rem;
+}
+
+.benefit .content-benefit p {
+    font-size: 1.5rem;
+}
+
+.benefit .content-benefit p span {
+    color: green;
+    font-weight: 800;
+}
+
+.benefit .content-benefit ul {
+    margin: 1.5rem 0 0 1.5rem;
+}
+
+.benefit .content-benefit ul li {
+    font-size: 1rem;
+    margin: 1.5rem;
+    list-style: none;
+    text-align: start;
+    transition: transform 0.2s ease-in-out;
+}
+
+.benefit .content-benefit ul li hr {
+    border: 1px solid black;
+}
+
+.benefit .content-benefit ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: green;
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: auto; /* Agar footer tetap di bawah halaman */
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer p a {
+    color: blue;
+}
